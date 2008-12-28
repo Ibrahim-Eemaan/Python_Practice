@@ -1,8 +1,3 @@
-x = 3
-y = 6
+dict_one = {'Me': 15, 'YOu': 5, 'them': 1}
 
-z = x + y
-
-while z != 10:
-    print("Your answer is not correct")
-    z += 1
+print(str(dict_one['Me']))
