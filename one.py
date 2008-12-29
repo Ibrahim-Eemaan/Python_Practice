@@ -1,51 +1,9 @@
-word_count = {
-    'l': 3,
-    'like': 1,
-    'the': 3
-}
-
-#list.item()
-print(word_count.items())
-print(list(word_count.items()))
-
-#list.keys()
-print(word_count.keys())
-
-#list.value()
-print(word_count.values())
-
-#list.remove()
-word_count.pop('l')
-print(word_count)
-
-#pop item
-word_count.popitem
-print(word_count)
-
-
-#MUTABILITY
-
-#lists[] are mutable
-#tuples() are immutable
-#t = (1,2,3) this is unchangeable, just like rock
-#l = [1,2,3] this is changeable
-
-#IMMUTABLES
-#tuples, floats, booleans
-
-#MUTABLE
-#list, dictionaries, ordereddict
-
-
-
-#REGEX - REGEX - REGEX
-
 import re
 
-text = 'random string. myname.@gmail.com'
+text = 'random string myname123@mysite.com some more reasonable text'
 
-pattern = re.compile('[@]')
+pattern = re.compile('[a-zA-z0-9]')
 
-result = pattern.search(text)
+result = pattern.findall(text)
 
 print(result)
