@@ -4,6 +4,8 @@ word_count = {
     'the': 3
 }
 
+
+
 #list.item()
 print(word_count.items())
 print(list(word_count.items()))
