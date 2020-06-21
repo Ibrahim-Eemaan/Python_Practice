@@ -1,0 +1,1 @@
+file = open('clown.txt', 'w')
